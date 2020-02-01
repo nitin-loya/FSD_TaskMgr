@@ -1,0 +1,5 @@
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\DAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\DAL.pdb
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.pdb

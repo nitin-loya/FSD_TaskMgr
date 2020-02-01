@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaskMgrModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="TaskId" />
+    </Key>
+    <Property Name="TaskId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaskName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Priority" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <NavigationProperty Name="Task1" Relationship="TaskMgrModel.fk_parent_id1" FromRole="Task" ToRole="Task1" />
+    <NavigationProperty Name="Task2" Relationship="TaskMgrModel.fk_parent_id1" FromRole="Task1" ToRole="Task" />
+  </EntityType>
+  <EntityContainer Name="TaskMgrEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tasks" EntityType="Self.Task" />
+    <AssociationSet Name="fk_parent_id1" Association="TaskMgrModel.fk_parent_id1">
+      <End Role="Task" EntitySet="Tasks" />
+      <End Role="Task1" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="fk_parent_id1">
+    <End Type="TaskMgrModel.Task" Role="Task" Multiplicity="0..1" />
+    <End Type="TaskMgrModel.Task" Role="Task1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="TaskId" />
+      </Principal>
+      <Dependent Role="Task1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
