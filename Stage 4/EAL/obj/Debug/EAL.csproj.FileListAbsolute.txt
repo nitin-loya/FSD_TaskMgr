@@ -1,0 +1,9 @@
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EAL.dll.config
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EAL.pdb
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EntityFramework.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EntityFramework.xml
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\obj\Debug\EAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\EAL\obj\Debug\EAL.pdb

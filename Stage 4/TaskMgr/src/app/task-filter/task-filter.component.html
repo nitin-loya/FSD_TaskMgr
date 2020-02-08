@@ -1,0 +1,44 @@
+  <div class="container">
+    <form action="" [formGroup]="filterForm">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="">Task</label>
+          <input type="text" (keyup)="filterGrid()" class="form-control" formControlName="TaskName">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="">Parent Task</label>
+          <input type="text" class="form-control" (keyup)="filterGrid()" formControlName="ParentTask">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="">Priority From</label>
+            <input type="range" class="form-control" (change)="filterGrid()" formControlName="PriorityFrom" min="1" max="10" value="1" step="1">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">Priority To</label>
+            <input type="range" class="form-control" (change)="filterGrid()" formControlName="PriorityTo" min="1" max="10" value="1" step="1">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">Start Date</label>
+            <input type="date" class="form-control" (change)="filterGrid()" formControlName="StartDate" value="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">End Date</label>
+            <input type="date" class="form-control" (change)="filterGrid()" formControlName="EndDate" value="">
+          </div>
+        </div>
+    </div>   
+    </form>      
+  </div>

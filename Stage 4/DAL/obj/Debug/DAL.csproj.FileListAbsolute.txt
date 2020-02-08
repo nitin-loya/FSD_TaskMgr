@@ -1,0 +1,13 @@
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\DAL.dll.config
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\DAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\DAL.pdb
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EntityFramework.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EAL.pdb
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EAL.dll.config
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EntityFramework.xml
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.dll
+E:\Cognizant FSE\My FSE\FSDTaskMgr\DAL\obj\Debug\DAL.pdb
