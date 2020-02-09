@@ -1,0 +1,27 @@
+<app-task-filter (filterEvent)="criteria = $event"></app-task-filter>
+<div class="container">
+  <table class="table">
+    <tr>
+      <th>Task</th>
+      <th>Parent</th>
+      <th>Priority</th>
+      <th>Start</th>
+      <th>End</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let task of taskList | search : criteria" ng-class="task.Status == 'C'? 'completed': ''">
+      <td>{{task.TaskName}}</td>
+      <td>{{task.ParentTask}}</td>
+      <td>{{task.Priority}}</td>
+      <td>{{task.StartDate}}</td>
+      <td>{{task.EndDate}}</td>
+      <td>
+        <span class="pull-right">
+        <button class="btn btn-primary" (click)="onEdit(task)" [disabled]="task.Status == 'C'">Edit</button>&nbsp;
+        <button class="btn btn-light" (click)="onEnd(task)" [disabled]="task.Status == 'C'">End Task</button>
+      </span>
+      </td>
+    </tr>
+  </table>
+</div>

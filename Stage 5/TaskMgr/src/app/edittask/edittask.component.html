@@ -1,0 +1,71 @@
+<div class="container">
+<h2>Add Task</h2>
+<form action="" (ngSubmit)="submitTask()" (ngReset)="reset()">
+  
+    <div class="row">
+        <div class="col-md-2"><label>Task Name</label></div>
+      <div class="col-md-5">
+        <div class="form-group">          
+          <input type="text" class="form-control" name="TaskName" [(ngModel)]="task.TaskName">
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+        <div class="col-md-2"><label>Priority</label></div>
+        <div class="col-md-5">
+         <div class="form-group">          
+          <input type="range"
+          list="prioritylist" 
+          class="form-control" 
+          min="1" max="10" value="1" step="1" 
+          name="Priority"
+           [(ngModel)]="task.Priority">
+          <datalist id="prioritylist">
+              <option value="1" label="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5" label="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10" label="10"></option>
+          </datalist>
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+        <div class="col-md-2"><label>Parent Task (Optional)</label></div>
+        <div class="col-md-5">
+         <div class="form-group">          
+          <select value="0" [(ngModel)]="task.ParentId" name="ParentId">
+            <option value="0">No parent task</option>
+            <option *ngFor="let p of parentList" value="{{p.ParentId}}">{{p.ParentTask}}</option>
+          </select>
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+       <div class="col-md-2"><label>Start Date</label></div>
+        <div class="col-md-5">
+         <div class="form-group">          
+          <input type="date" name="StartDate" [(ngModel)]="task.StartDate">
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+        <div class="col-md-2"><label>End Date</label></div>
+        <div class="col-md-5">
+         <div class="form-group">          
+          <input type="date" name="EndDate" [(ngModel)]="task.EndDate">
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="offset-md-4 col-md-3">
+        <button type="submit" class="btn btn-primary">Save</button> 
+        &nbsp;<button type="reset" class="btn btn-light">Reset</button></div>
+    </div>
+</form>
+</div>
